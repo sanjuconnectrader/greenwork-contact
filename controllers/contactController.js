@@ -287,7 +287,7 @@ export const sendContactMessage = async (req, res) => {
     // 2. Generate and send email with premium template
     const mailOptions = {
       from: `"GreenWorks Concierge" <${process.env.EMAIL_USER}>`,
-      to: 'sanjiths513@gmail.com',
+      to: 'info@greenworkscarpetcleaning.com',
       subject: `🌟 New Client Inquiry: ${name}`,
       html: generatePremiumEmailTemplate({ name, email, phone, address, message }),
       replyTo: email,
